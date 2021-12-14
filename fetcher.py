@@ -16,7 +16,7 @@ sopen = urlopen(req, timeout=10)
 data = json.loads(sopen.read())
 
 class values:
-    serversname = "\nServers hostname: " + data['Data']['hostname']
+    serversname = "\nServer hostname: " + data['Data']['hostname']
     gametype = "Gametype: " + data['Data']['gametype']
     onlineplayers = "\nOnline players: " + str(data['Data']['clients'])
     maxplayers = str(data['Data']['sv_maxclients'])
